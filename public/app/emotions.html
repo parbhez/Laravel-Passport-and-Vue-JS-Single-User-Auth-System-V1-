@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+
+<html lang="en" class="dark-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="horizontal-menu-template">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Social Media Forensics | Cleofan</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/icon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/core-dark.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default-dark.css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <script src="../assets/js/config.js"></script>
+</head>
+
+<body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
+        <div class="layout-container">
+
+            <nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
+                <div class="container-xxl">
+                    <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4">
+                        <a href="index" class="app-brand-link gap-2">
+                            <img src="../assets/img/logo.png" class="main-logo" alt="">
+                        </a>
+
+                        <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
+                            <img src="../assets/img/logo.png" class="main-logo" alt="">
+                        </a>
+                    </div>
+
+                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                            <i class="bx bx-menu bx-sm"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+                            <!-- Notification -->
+                            <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-2">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    <i class="bx bx-bell bx-sm"></i>
+                                    <span class="badge bg-danger rounded-pill badge-notifications">5</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end py-0">
+                                    <li class="dropdown-menu-header border-bottom">
+                                        <div class="dropdown-header d-flex align-items-center py-3">
+                                            <h5 class="text-body mb-0 me-auto">Notifications</h5>
+                                            <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" title="Mark all as read"><i class="bx fs-4 bx-envelope-open"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-notifications-list scrollable-container">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                                <div class="d-flex">
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="mb-1">Congratulation Lettie</h6>
+                                                        <small class="text-muted">1h ago</small>
+                                                    </div>
+                                                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-read"><span
+                                                                class="badge badge-dot"></span></a>
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
+                                                                class="bx bx-x"></span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                                <div class="d-flex">
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="mb-1">Charles Franklin</h6>
+                                                    </div>
+                                                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-read"><span
+                                                                class="badge badge-dot"></span></a>
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
+                                                                class="bx bx-x"></span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                                <div class="d-flex">
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="mb-1">New Message</h6>
+                                                    </div>
+                                                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-read"><span
+                                                                class="badge badge-dot"></span></a>
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
+                                                                class="bx bx-x"></span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-menu-footer border-top">
+                                        <a href="javascript:void(0);" class="dropdown-item d-flex justify-content-center p-3">
+                                            View all notifications
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--/ Notification -->
+
+                            <!-- User -->
+                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                                    <i class='bx bx-user-circle bx-md'></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="pages-account-settings-account">
+                                            <div class="d-flex">
+                                                <div class="flex-grow-1">
+                                                    <span class="fw-semibold d-block lh-1"></span>
+                                                    <small>Admin</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="user_settings">
+                                            <i class="bx bx-user me-2"></i>
+                                            <span class="align-middle">My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="auth-login-cover" target="_blank">
+                                            <i class="bx bx-power-off me-2"></i>
+                                            <span class="align-middle">Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--/ User -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- / Navbar -->
+
+            <!-- Layout container -->
+            <div class="layout-page">
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+                    <!-- Menu -->
+                    <aside id="layout-menu" class="layout-menu-horizontal menu-horizontal menu bg-menu-theme flex-grow-0">
+                        <div class="container-xxl d-flex h-100">
+                            <ul class="menu-inner">
+                                <!-- Dashboards -->
+                                <li class="menu-item">
+                                    <a href="index" class="menu-link">
+                                        <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                                        <div data-i18n="Dashboards">Dashboard</div>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="trends" class="menu-link">
+                                        <i class="menu-icon tf-icons bx bx-trending-up me-1"></i>
+                                        <div data-i18n="Trends">Trends</div>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item active">
+                                    <a href="emotions" class="menu-link">
+                                        <i class="menu-icon tf-icons bx bx-smile me-1"></i>
+                                        <div data-i18n="Emotions">Emotions</div>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="virals" class="menu-link">
+                                        <i class="menu-icon tf-icons bx bx-wind me-1"></i>
+                                        <div data-i18n="Virals">Virals</div>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="monitoring" class="menu-link">
+                                        <i class="menu-icon tf-icons bx bxs-dashboard me-1"></i>
+                                        <div data-i18n="Monitoring">Monitoring</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="dummy_profile" class="menu-link">
+                                        <i class="menu-icon tf-icons bx bxs-user-detail me-1"></i>
+                                        <div data-i18n="Dummy Profiles">Dummy Profile</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item ">
+                                    <a href="reporting" class="menu-link">
+                                        <i class="menu-icon tf-icons bx bxs-user-detail me-1"></i>
+                                        <div data-i18n="Reporting">Custom Report</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="javascript:void(0)" class="menu-link menu-toggle">
+                                        <i class='menu-icon tf-icons bx bxs-cog'></i>
+                                        <div data-i18n="Settings">Settings</div>
+                                    </a>
+                                    <ul class="menu-sub">
+                                        <li class="menu-item">
+                                            <a href="user_settings" class="menu-link">
+                                                <i class='menu-icon tf-icons bx bx-user'></i>
+                                                <div data-i18n="Targeted Profile">User Settings</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="communication_settings" class="menu-link">
+                                                <i class='menu-icon tf-icons bx bx-envelope'></i>
+                                                <div data-i18n="Communication Settings">Communication Settings</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="users" class="menu-link">
+                                                <i class='menu-icon tf-icons bx bx-user-plus'></i>
+                                                <div data-i18n="Users">Users</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="accesscontrol" class="menu-link">
+                                                <i class='menu-icon tf-icons bx bx-user-plus'></i>
+                                                <div data-i18n="Roles">Roles</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="log" class="menu-link">
+                                                <i class='menu-icon tf-icons bx bx-user-plus'></i>
+                                                <div data-i18n="Permission">System Log</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="javascript:void(0)" class="menu-link menu-toggle">
+                                        <i class="menu-icon tf-icons bx bx-search-alt-2"></i>
+                                        <div data-i18n="Profile Search">Profile Search</div>
+                                    </a>
+                                    <ul class="menu-sub">
+                                        <li class="menu-item">
+                                            <a href="profilesearch_fb" class="menu-link">
+                                                <i class='menu-icon tf-icons bx bxl-facebook-square'></i>
+                                                <div data-i18n="Search on FB">Search on FB</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="profilesearch_all" class="menu-link">
+                                                <i class="menu-icon tf-icons bx bx-analyse"></i>
+                                                <div data-i18n="All Search Engeen">All Search Engeen</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="lockprofile" class="menu-link">
+                                        <i class="menu-icon tf-icons bx bxs-user-detail me-1"></i>
+                                        <div data-i18n="Lock Profile View">Lock Profile View</div>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="profileactivity" class="menu-link">
+                                        <i class="menu-icon tf-icons bx bxs-user-detail me-1"></i>
+                                        <div data-i18n="Profile Activity">Profile Activity</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <!-- / Menu -->
+
+                    <!-- Content -->
+
+                    <div class="container-xxl flex-grow-1 container-p-y">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <!-- Hashtags Analytics-->
+                                    <div class="col-lg-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header d-flex justify-content-between align-items-center">
+                                                <h5 class="card-title mb-0">Dhaka</h5>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                মেসির_ভক্তুদের_দেখতে_চাই🤩</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">80% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">10% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">20% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                goal</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">78% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">12% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">25% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                australia</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">78% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">16% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">22% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <div class="d-flex flex-column me-2">
+                                                    <a class="btn btn-sm btn-primary" href="divisional_emotions?division=Dhaka">View All</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header d-flex justify-content-between align-items-center">
+                                                <h5 class="card-title mb-0">Barisal</h5>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                happybirthday</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">82% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">20% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">00% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                ভালোবাসার_আরেক_নাম_মেসি🇦🇷❤️⚽</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">76% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">00% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">25% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                birthdayboy</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">68% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">20% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">14% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <div class="d-flex flex-column me-2">
+                                                    <a class="btn btn-sm btn-primary" href="divisional_emotions?division=Barishal">View All</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header d-flex justify-content-between align-items-center">
+                                                <h5 class="card-title mb-0">Chittagong</h5>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                btsjin</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">42% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">08% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">18% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                বসের__জন্য__একটা__লাইক</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">78% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">22% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">30% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                ব্রাজিলকে</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">85% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">18% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">24% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <div class="d-flex flex-column me-2">
+                                                    <a class="btn btn-sm btn-primary" href="divisional_emotions?division=Cittagong">View All</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header d-flex justify-content-between align-items-center">
+                                                <h5 class="card-title mb-0">Khulna</h5>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                heather</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">57% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">24% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">28% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                wwhjin</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">72% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">10% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">25% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                paulodybala</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">38% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">05% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">15% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <div class="d-flex flex-column me-2">
+                                                    <a class="btn btn-sm btn-primary" href="divisional_emotions?division=Khulna">View All</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header d-flex justify-content-between align-items-center">
+                                                <h5 class="card-title mb-0">Mymensingh</h5>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                kimseokjin</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">69% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">23% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">30% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                jin taekookiey</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">86% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">28% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">38% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                গোল</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">75% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">15% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">26% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <div class="d-flex flex-column me-2">
+                                                    <a class="btn btn-sm btn-primary" href="divisional_emotions?division=Mymensingh">View All</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header d-flex justify-content-between align-items-center">
+                                                <h5 class="card-title mb-0">Rajshahi</h5>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                বসের__জন্য__একটা__লাইক</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">86% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">27% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">38% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                লিওনেল_মেসি_10🔥🇦🇷🥀</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">90% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">00% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">28% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                pele</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">86% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">21% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">38% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <div class="d-flex flex-column me-2">
+                                                    <a class="btn btn-sm btn-primary" href="divisional_emotions?division=Rajshahi">View All</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header d-flex justify-content-between align-items-center">
+                                                <h5 class="card-title mb-0">Rangpur</h5>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                seokjin</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">81% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">24% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">29% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                concert</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">76% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">13% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">35% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                alvarez</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">76% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">15% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">32% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <div class="d-flex flex-column me-2">
+                                                    <a class="btn btn-sm btn-primary" href="divisional_emotions?division=Rangpur">View All</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header d-flex justify-content-between align-items-center">
+                                                <h5 class="card-title mb-0">Sylhet</h5>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                happyjinday</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">75% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">21% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">28% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                december</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">79% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">00% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">20% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="card">
+                                                        <div class="card-body trend">
+                                                            <a href="emotion-view">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <div class="card-info">
+                                                                            <h6 class="w-px-250 card-title mb-0 me-2">
+                                                                                মেসি_আসক্ত</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-danger">96% <i
+                                                                                class='bx bx-chevron-up-square'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-primary">28% <i
+                                                                                class='bx bx-checkbox-minus'></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column me-2">
+                                                                        <span class="badge bg-label-success">37% <i
+                                                                                class='bx bx-chevron-down-square'></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <div class="d-flex flex-column me-2">
+                                                    <a class="btn btn-sm btn-primary" href="divisional_emotions?division=Sylhet">View All</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col-md-12 col-xl-12 col-xxl-12 mb-4 order-2 order-lg-0">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5 class="card-title mb-0">Viral Prediction</h5>
+                                            </div>
+
+                                            <div class="table-responsive h-px-450">
+                                                <table class="table table-borderless mb-1 viral-prediction-table">
+                                                    <thead class="border-bottom">
+                                                        <tr>
+                                                            <th class="pt-0">Trend</th>
+                                                            <th class="pt-0">Possibility</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="">
+                                                                        <p class="mb-0 lh-1 text-nowrap">
+                                                                            মেসি_মানেই_আগুন🔥
+                                                                        </p>
+                                                                    </div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <h6 class="mb-0 text-warning">58%<i class='bx bxs-up-arrow-alt'></i></h6>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="">
+                                                                    <p class="mb-0 lh-1 text-nowrap">goal</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <h6 class="mb-0 text-success">18%<i class='bx bxs-down-arrow-alt'></i></h6>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="">
+                                                                    <p class="mb-0 lh-1 text-nowrap">paulodybala</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <h6 class="mb-0 text-danger">80%<i class='bx bxs-up-arrow-alt'></i></h6>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="">
+                                                                    <p class="mb-0 lh-1 text-nowrap">birthdayboy</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <h6 class="mb-0 text-success">20%<i class='bx bxs-down-arrow-alt'></i></h6>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="">
+                                                                        <p class="mb-0 lh-1 text-nowrap">btsjin
+                                                                        </p>
+                                                                    </div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <h6 class="mb-0 text-warning">63%<i class='bx bxs-up-arrow-alt'></i></h6>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="">
+                                                                    <p class="mb-0 lh-1 text-nowrap">alvarez</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <h6 class="mb-0 text-success">45%<i class='bx bxs-down-arrow-alt'></i></h6>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="">
+                                                                    <p class="mb-0 lh-1 text-nowrap">concert</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <h6 class="mb-0 text-danger">75%<i class='bx bxs-up-arrow-alt'></i></h6>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="">
+                                                                    <p class="mb-0 lh-1 text-nowrap">
+                                                                        লিওনেল_মেসি_10🔥🇦🇷🥀c</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <h6 class="mb-0 text-success">85%<i class='bx bxs-down-arrow-alt'></i></h6>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="">
+                                                                        <p class="mb-0 lh-1 text-nowrap">southkorea
+                                                                        </p>
+                                                                    </div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <h6 class="mb-0 text-warning">67%<i class='bx bxs-up-arrow-alt'></i></h6>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="">
+                                                                    <p class="mb-0 lh-1 text-nowrap">ব্রাজিলকে</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <h6 class="mb-0 text-success">71%<i class='bx bxs-down-arrow-alt'></i></h6>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                </div>
+                                                <div class="card-footer text-center">
+                                                    <div class="d-flex flex-column me-2">
+                                                        <button class="btn btn-sm btn-primary">View All</button>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-md-12 col-xl-12 col-xxl-12 mb-xxl-0 mb-4 order-2 order-lg-0">
+                                                    <div class="card">
+                                                        <div class="card-header">
+                                                            <h5 class="card-title mb-0">Activities</h5>
+                                                        </div>
+                                                        <div class="table-responsive bg-black h-px-450">
+                                                            <table class="table table-borderless mb-1">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="notification-list">
+                                                                            <div>
+                                                                                <p class="mb-0 lh-1 text-nowrap">One viral post detected
+                                                                                </p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="notification-list">
+                                                                            <div>
+                                                                                <p class="mb-0 lh-1 text-nowrap">One issue created
+                                                                                </p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td class="notification-list">
+                                                                            <div>
+                                                                                <p class="mb-0 lh-1 text-nowrap">New content arrival
+                                                                                </p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td class="notification-list">
+                                                                            <div>
+                                                                                <p class="mb-0 lh-1 text-nowrap">One post reach 10k view
+                                                                                </p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="notification-list">
+                                                                            <div>
+                                                                                <p class="mb-0 lh-1 text-nowrap">One new creator create a post</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="card-footer text-center">
+                                                            <div class="d-flex flex-column me-2">
+                                                                <button class="btn btn-sm btn-primary">View All</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/ Content -->
+                                <!-- Footer -->
+                                <footer class="content-footer footer bg-footer-theme">
+                                    <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                                        <div class="mb-2 mb-md-0">
+                                            ©
+                                            <script>
+                                                document.write(new Date().getFullYear());
+                                            </script>
+                                            ,
+                                            <a href="https://cleofan.com" target="_blank" class="footer-link fw-semibold">Cleofan</a>
+                                        </div>
+                                    </div>
+                                </footer>
+                                <!-- / Footer -->
+
+                                <div class="content-backdrop fade"></div>
+                            </div>
+                            <!--/ Content wrapper -->
+                        </div>
+
+                        <!--/ Layout container -->
+                    </div>
+                </div>
+
+                <!-- Overlay -->
+                <div class="layout-overlay layout-menu-toggle"></div>
+
+                <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+                <div class="drag-target"></div>
+
+                <!--/ Layout wrapper -->
+
+                <!-- Core JS -->
+                <!-- build:js assets/vendor/js/core.js -->
+                <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+                <script src="../assets/vendor/libs/popper/popper.js"></script>
+                <script src="../assets/vendor/js/bootstrap.js"></script>
+                <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+                <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+
+                <script src="../assets/vendor/libs/i18n/i18n.js"></script>
+                <script src="../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+                <script src="../assets/vendor/js/menu.js"></script>
+                <!-- endbuild -->
+
+                <!-- Vendors JS -->
+                <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+                <!-- Main JS -->
+                <script src="../assets/js/main.js"></script>
+
+                <!-- Page JS -->
+                <script src="../assets/js/dashboards-analytics.js"></script>
+</body>
+
+</html>

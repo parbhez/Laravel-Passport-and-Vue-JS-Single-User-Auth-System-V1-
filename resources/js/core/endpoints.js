@@ -1,0 +1,1 @@
+export const RegisterSchools = '/admin/registerSchools';

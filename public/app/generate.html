@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html lang="en" class="dark-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="horizontal-menu-template">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Social Media Forensics | Cleofan</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/icon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/core-dark.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default-dark.css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+    <link href="../assets/css/select2.css" rel="stylesheet" />
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <script src="../assets/js/config.js"></script>
+</head>
+
+<body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
+        <div class="layout-container">
+            <!-- Navbar -->
+
+
+            <nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
+                <div class="container-xxl">
+                    <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4">
+                        <a href="home" class="app-brand-link gap-2">
+                            <img src="../assets/img/logo.png" class="main-logo" alt="">
+                            <span class="subtitle">AIBotLite</span>
+                        </a>
+
+                        <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
+                            <img src="../assets/img/logo.png" class="main-logo" alt="">
+                        </a>
+                    </div>
+
+                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                            <i class="bx bx-menu bx-sm"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+                            <!-- Notification -->
+                            <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-2">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    <i class="bx bx-bell bx-sm"></i>
+                                    <span class="badge bg-danger rounded-pill badge-notifications">0</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end py-0">
+                                    <li class="dropdown-menu-header border-bottom">
+                                        <div class="dropdown-header d-flex align-items-center py-3">
+                                            <h5 class="text-body mb-0 me-auto">Notifications</h5>
+                                            <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" title="Mark all as read"><i class="bx fs-4 bx-envelope-open"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-notifications-list scrollable-container">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                                <div class="d-flex">
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="mb-1">data process completed</h6>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                                <div class="d-flex">
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="mb-1">Prediction completed</h6>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-menu-footer border-top">
+                                        <a href="javascript:void(0);" class="dropdown-item d-flex justify-content-center p-3">
+                                          View all notifications
+                                      </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--/ Notification -->
+
+                            <!-- User -->
+                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                                    <i class='bx bx-user-circle bx-md'></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="pages-account-settings-account">
+                                            <div class="d-flex">
+                                                <div class="flex-grow-1">
+                                                    <span class="fw-semibold d-block lh-1"></span>
+                                                    <small>Admin</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="user_settings">
+                                            <i class="bx bx-user me-2"></i>
+                                            <span class="align-middle">My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="index" target="_blank">
+                                            <i class="bx bx-power-off me-2"></i>
+                                            <span class="align-middle">Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--/ User -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- / Navbar -->
+
+            <!-- Layout container -->
+            <div class="layout-page">
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+                    <!-- Menu -->
+
+                    <aside id="layout-menu" class="layout-menu-horizontal menu-horizontal menu bg-menu-theme flex-grow-0">
+                        <div class="container-xxl d-flex h-100">
+                            <ul class="menu-inner">
+                                <!-- Dashboards -->
+                                <li class="menu-item">
+                                    <a href="home" class="menu-link">
+                                        <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                                        <div data-i18n="Dashboards">Dashboard</div>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="webmanager" class="menu-link">
+                                        <i class="menu-icon tf-icons bx bx-trending-up me-1"></i>
+                                        <div data-i18n="Web Manager">Web Manager</div>
+                                    </a>
+                                </li>
+
+                                <li class="menu-item ">
+                                    <a href="javascript:void(0)" class="menu-link menu-toggle">
+                                        <i class='menu-icon tf-icons bx bx-world me-1'></i>
+                                        <div data-i18n="Deep Web Manager">Deep Web Manager</div>
+                                    </a>
+                                    <ul class="menu-sub ">
+                                        <li class="menu-item ">
+                                            <a href="deep_webmanager_record" class="menu-link">
+                                                <i class='menu-icon tf-icons bx bxs-data'></i>
+                                                <div data-i18n="Record">Record</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="deep_webmanager_source" class="menu-link">
+                                                <i class='menu-icon tf-icons bx bxs-package'></i>
+                                                <div data-i18n="Source">Source</div>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li class="menu-item ">
+                                    <a href="javascript:void(0)" class="menu-link menu-toggle">
+                                        <i class='menu-icon tf-icons me-1 bx bxs-cloud'></i>
+                                        <div data-i18n="Dark Web Manager">Dark Web Manager</div>
+                                    </a>
+                                    <ul class="menu-sub ">
+                                        <li class="menu-item ">
+                                            <a href="dark_webmanager_record" class="menu-link">
+                                                <i class='menu-icon tf-icons bx bxs-data'></i>
+                                                <div data-i18n="Record">Record</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="dark_webmanager_source" class="menu-link">
+                                                <i class='menu-icon tf-icons bx bxs-package'></i>
+                                                <div data-i18n="Source">Source</div>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="data_segregation" class="menu-link">
+                                        <i class="menu-icon tf-icons bx bxs-dashboard me-1"></i>
+                                        <div data-i18n="Data Segregation">Data Segregation</div>
+                                    </a>
+                                </li>
+                                
+                                <li class="menu-item">
+                                    <a href="data_analyzer" class="menu-link">
+                                        <i class='menu-icon tf-icons me-1 bx bx-scatter-chart'></i>
+                                        <i class="menu-icon tf-icons bx bxs-user-detail me-1"></i>
+                                        <div data-i18n="Data Analyzer">Data Analyzer</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="issue_tracker" class="menu-link">
+                                        <i class='menu-icon tf-icons me-1 bx bxl-deezer'></i>
+                                        <div data-i18n="Issue Tracker">Issue Tracker</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="predictor" class="menu-link">
+                                        <i class='menu-icon tf-icons me-1 bx bxs-pie-chart-alt-2'></i>
+                                        <div data-i18n="Predictor">Predictor</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item active">
+                                    <a href="reporting" class="menu-link">
+                                        <i class='menu-icon tf-icons me-1 bx bxs-book-content'></i>
+                                        <div data-i18n="Custom Report">Custom Report</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="javascript:void(0)" class="menu-link menu-toggle">
+                                        <i class='menu-icon tf-icons bx bxs-cog me-1'></i>
+                                        <div data-i18n="Settings">Settings</div>
+                                    </a>
+                                    <ul class="menu-sub">
+                                        <li class="menu-item">
+                                            <a href="user_settings" class="menu-link">
+                                                <i class='menu-icon tf-icons bx bx-user'></i>
+                                                <div data-i18n="User Settings">User Settings</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="communication_settings" class="menu-link">
+                                                <i class='menu-icon tf-icons bx bx-envelope'></i>
+                                                <div data-i18n="Communication Settings">Communication Settings</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="users" class="menu-link">
+                                                <i class='menu-icon tf-icons bx bx-user-plus'></i>
+                                                <div data-i18n="Users">Users</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="accesscontrol" class="menu-link">
+                                                <i class='menu-icon tf-icons bx bx-user-check'></i>
+                                                <div data-i18n="Roles">Roles</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="log" class="menu-link">
+                                                <i class='menu-icon tf-icons bx bx-list-ol'></i>
+                                                <div data-i18n="System Log">System Log</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </aside>
+
+                    <!-- Content -->
+
+                    <div class="container-xxl flex-grow-1 container-p-y">
+
+
+                        <!-- Advanced Search -->
+                        <div class="card">
+                            
+                            <hr class="mt-0" />
+                            <div class="card-datatable p-5">
+                                <h5 class="card-header">Report</h5>
+                                
+                                <div class="col-md-12">
+                                   <table class="dt-row-grouping table table-bordered">
+                                    <thead class="text-center">
+                                        <tr>
+                                            <th style="width: 50px">SL</th>
+                                            <th>Category</th>
+                                            <th>Title</th>
+                                            <th>Description</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Business</td>
+                                            <td>Tk 5,000 crore scheme launched for capital machinery purchase</td>
+                                            <td>Bangladesh Bank today rolled out a Tk 5,000 crore refinance scheme to help borrowers procure environment-friendly capital machinery. The scheme named "Green transformation fund" will help borrowers to replace
+                                                their existing capital machinery, which are harmful for environment. Businesses will be allowed to get fund to replace their capital machinery in nine categories. The nine fields include water use efficiency
+                                                in wet processing, water conservation and management, resource efficiency and recycling, renewable energy and heat and temperature management, according to a central bank notice.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Business</td>
+                                            <td>Bangladesh demands restoration of US GSP during Ticfa talks </td>
+                                            <td>Bangladesh has demanded the United States restore the generalised system of preferences (GSP) status during the 6th round meeting of the Trade and Investment Cooperation Forum Agreement (Ticfa) in Washington
+                                                on Tuesday. Both Dhaka and Washington affirmed the importance of Bangladesh's efforts aimed at reforming its labour laws and discussed Bangladesh's interest in the restoration of its beneficiary status under
+                                                the US GSP programme, according to a statement from the United States Trade Representative (USTR), the chief trade negotiation body of the North American country.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Sports</td>
+                                            <td>Mehedi breaks the 107-run stand with Shreyas' wicket</td>
+                                            <td>All-rounder Mehidi Hasan Miraz managed to pick up the all-important wicket of Shreyas Iyer as the batter was held out at deep mid-wicket trying to go over the boundary in the second ODI of the three-match series
+                                                at the Sher-e-Bangla National Cricket Stadium on Wednesday. Shreyas smashed three sixes and six fours to score 82 while stitching up a 107-run partnership with Axar Patel who also reached his fifty. Bangladesh
+                                                off-spinner Mehidi Hasan Miraz trapped KL Rahul lbw for 14 runs to reduce India to 80-4 in pursuit of Bangladesh's 271 after the end of 20 overs in the second ODI of the three-match series at the Sher-e-Bangla
+                                                National Cricket Stadium on Wednesday.</td>
+                                        </tr>
+                                      
+                                      
+                                          <tr>
+                                            <td>4</td>
+                                            <td>Business</td>
+                                            <td>Bangladesh to get $250 million from AIIB as budget support</td>
+                                            <td>The Asian Infrastructure Investment Bank (AIIB) has agreed to give $250 million in loan as budget support to implement the Strengthening Social Resilience Programme (sub-programme 2).
+
+Sharifa Khan, secretary of the Economic Relations Division, and Urjit R Patel, vice-president of Investment Operations Region-1 at the AIIB, inked a deal in this regard at the ERD in Dhaka today. The main objective of the programme is to improve the inclusiveness and responsiveness of social development in Bangladesh, the ERD said in a statement.
+
+If the programme is implemented, it will improve the coverage and efficiency of social protection. It will also improve financial inclusion of disadvantaged people and strengthen the responses to lifecycle social and health needs.
+
+The loan will be received in standard terms and conditions of the AIIB.
+
+The repayment period of the loan is 26.5 years, including a three-year grace period.
+
+The AIIB invested $2.79 billion in Bangladesh in the last five years.
+
+Bangladesh received $800 million from AIIB as budget support in the last three financial years to combat the Covid-19 pandemic, help the government declare stimulus packages and strengthen the post-Covid economy. </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Business</td>
+                                            <td>Leather goods export to hit $10 billion by 2030: Munshi</td>
+                                            <td>
+
+Leather and leather goods export from Bangladesh will rise by 10 times to $10 billion by 2030 from the existing $1 billion, Commerce Minister Tipu Munshi said today.
+
+Quality should be ensured at first for export of leather products and the local leather industry still has a lot of room for improvement, he said.
+For all latest news, follow The Daily Star's Google News channel.
+
+The minister spoke while delivering speech at the opening of the three-day LeatherTech-2022 organised by the Leathergoods and Footwear Manufacturers & Exporters Association of Bangladesh (LFMEAB) at International Convention City Bashundhara in Dhaka.
+
+The government has shifted tannery factories from Dhaka's Hazaribagh to Savar to develop this industry in a planned manner, the minister said.
+
+"There is a huge demand for leather products in the international markets. We have raw materials and skilled manpower. With the help of new technologies, the leather industry can go a long way."
+
+In recent times, the global leather industry has been shifting its focus from Vietnam and China, which is an opportunity for Bangladesh, Munshi said. "Bangladesh should utilise this opportunity."
+
+The country's financial institutions should now come up with more support for further development of the local leather industries, he said.
+
+LFMEAB President Syed Nasim Manzur, Chairman of Bangladesh Tanners Association Shaheen Ahmed, Member of India's Committee of Administration Council of Leather Exports Vipan Kumar Seth also spoke at the event.
+
+Some 200 companies from 10 countries took part in the annual showcase of leather goods and technologies and the gates of the fair will remain open for visitors from 11 am to 7 pm.
+                                          </td></tr>
+                                          
+                                         
+                                        
+                   
+                                        
+                                    
+                                          
+                                          
+                                    </tbody>
+                                </table>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--/ Advanced Search -->
+
+                    </div>
+                    <!--/ Content -->
+
+                    <!-- Footer -->
+                    <footer class="content-footer footer bg-footer-theme">
+                        <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                            <div class="mb-2 mb-md-0">
+                                ©
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                ,
+                                <a href="https://cleofan.com" target="_blank" class="footer-link fw-semibold">Cleofan</a>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- / Footer -->
+
+                    <div class="content-backdrop fade"></div>
+                </div>
+                <!--/ Content wrapper -->
+            </div>
+
+            <!--/ Layout container -->
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+
+    <!--/ Layout wrapper -->
+
+    <!-- Core JS -->
+
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/js/select2.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+
+    <script src="../assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/moment/moment.js"></script>
+    <script src="../assets/vendor/libs/datatables/jquery.dataTables.js"></script>
+    <script src="../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <script src="../assets/vendor/libs/datatables-responsive/datatables.responsive.js"></script>
+    <script src="../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.js"></script>
+    <script src="../assets/vendor/libs/datatables-buttons/datatables-buttons.js"></script>
+    <script src="../assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.js"></script>
+    <script src="../assets/vendor/libs/jszip/jszip.js"></script>
+    <script src="../assets/vendor/libs/pdfmake/pdfmake.js"></script>
+    <script src="../assets/vendor/libs/datatables-buttons/buttons5.js"></script>
+    <script src="../assets/vendor/libs/datatables-buttons/buttons.print.js"></script>
+    <script src="../assets/vendor/libs/select2/select2.js"></script>
+    <script src="../assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+    <script src="../assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+    <script src="../assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+    <script src="../assets/vendor/libs/cleavejs/cleave.js"></script>
+    <script src="../assets/vendor/libs/cleavejs/cleave-phone.js"></script>
+
+
+
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="../assets/js/app-user-list.js"></script>
+</body>
+
+</html>
